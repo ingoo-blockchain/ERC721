@@ -25,6 +25,6 @@ interface IERC721 {
     // setApprovalForAll : owner 가진 모든토큰을 대리인 지정
     function setApprovalForAll(address _operator, bool _approved) external;
     // _approved 를 return 해주는 함수.
-    function isApprovalForAll(address _owner, address _operator) external view returns(bool);
+    function isApprovedForAll(address _owner, address _operator) external view returns(bool);
 
 }
